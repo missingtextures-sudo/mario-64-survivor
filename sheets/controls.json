@@ -1,0 +1,10 @@
+{
+  "sheet": "controls",
+  "about": "Each SM64 controller button and the RoR2 inputs that press it. Movement is RoR2's move stick, turned to world space by the camera.",
+  "columns": ["button", "field", "ror2Inputs", "label"],
+  "rows": [
+    {"button": "A", "field": "buttonA", "ror2Inputs": ["jump"], "label": "Jump"},
+    {"button": "B", "field": "buttonB", "ror2Inputs": ["skill1"], "label": "Punch / Kick / Dive"},
+    {"button": "Z", "field": "buttonZ", "ror2Inputs": ["skill2", "skill3"], "label": "Crouch / Ground pound"}
+  ]
+}

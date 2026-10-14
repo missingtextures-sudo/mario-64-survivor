@@ -1,0 +1,60 @@
+waitscene title 240
+sleep 3
+host
+waitscene lobby 90
+sleep 3
+pickmario
+sleep 4
+shot select
+startrun
+sleep 15
+exitpod
+sleep 3
+exitpod
+waitmario 60
+nomonsters
+sleep 2
+facecam
+move 0 2
+sleep 2.5
+facecam
+sleep 0.5
+spawn BeetleMaster 3.2
+sleep 2.5
+status
+camstatus
+shot beetle
+facecam
+move 0 0.25
+sleep 0.4
+press B 0.1
+sleep 0.12
+shot punch1
+sleep 0.25
+press B 0.1
+sleep 0.15
+shot punch2
+sleep 0.3
+press B 0.1
+sleep 0.2
+shot kick
+status
+sleep 1.5
+move 0 1.2
+sleep 0.3
+move 0 0.9 A
+sleep 0.45
+shot jump
+sleep 1.5
+spawn LemurianMaster 4
+sleep 2
+facecam
+press A 0.3
+sleep 0.35
+press Z 0.2
+sleep 0.5
+shot groundpound
+sleep 0.6
+shot groundpound2
+status
+log lab test done

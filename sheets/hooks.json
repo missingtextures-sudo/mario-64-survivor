@@ -1,0 +1,19 @@
+{
+  "sheet": "hooks",
+  "about": "Every place the mod touches Risk of Rain 2. gameType.gameMember is checked against the running game at start (a missing one is logged as an error).",
+  "columns": ["id", "gameType", "gameMember", "how", "purpose", "implementedIn"],
+  "rows": [
+    {"id": "content-pack", "gameType": "RoR2.ContentManagement.ContentManager", "gameMember": "collectContentPackProviders", "how": "event", "purpose": "Register Mario's body, display, survivor, skills and entity state.", "implementedIn": "MarioContent"},
+    {"id": "language", "gameType": "RoR2.Language", "gameMember": "onCurrentLanguageChanged", "how": "event", "purpose": "Add Mario's names and descriptions to every language.", "implementedIn": "MarioContent"},
+    {"id": "body-state", "gameType": "RoR2.EntityStateMachine", "gameMember": "mainStateType", "how": "prefab field", "purpose": "Mario's body idles in MarioMain instead of Commando's movement and skills.", "implementedIn": "MarioMain"},
+    {"id": "motor", "gameType": "KinematicCharacterController.KinematicCharacterMotor", "gameMember": "SetPosition", "how": "component", "purpose": "The body follows Mario; RoR2's own character physics is switched off.", "implementedIn": "MarioController"},
+    {"id": "model-hide", "gameType": "RoR2.CharacterModel", "gameMember": "invisibilityCount", "how": "component", "purpose": "Hide Commando's model; its hurtboxes and item displays stay.", "implementedIn": "MarioController"},
+    {"id": "collision", "gameType": "RoR2.LayerIndex", "gameMember": "world", "how": "physics query", "purpose": "Turn the stage's world colliders into SM64 surfaces around Mario.", "implementedIn": "LevelCollision"},
+    {"id": "attacks", "gameType": "RoR2.GlobalEventManager", "gameMember": "OnHitEnemy", "how": "call", "purpose": "Mario's hits deal RoR2 damage and trigger on-hit items.", "implementedIn": "MarioAttacks"},
+    {"id": "damage-taken", "gameType": "RoR2.GlobalEventManager", "gameMember": "onServerDamageDealt", "how": "event", "purpose": "Big hits knock Mario back with SM64's knockback.", "implementedIn": "DamageReaction"},
+    {"id": "teleport", "gameType": "RoR2.TeleportHelper", "gameMember": "TeleportBody", "how": "detect", "purpose": "When the game moves the body (out of bounds, teleports), Mario moves too.", "implementedIn": "MarioController"},
+    {"id": "audio", "gameType": "RoR2.RoR2Application", "gameMember": "isInSinglePlayer", "how": "winmm", "purpose": "Mario's voice and sounds play through Windows audio (RoR2 turns Unity audio off).", "implementedIn": "MarioAudio"},
+    {"id": "display", "gameType": "RoR2.CharacterModel", "gameMember": "baseRendererInfos", "how": "prefab component", "purpose": "The character select shows a live, idling Mario instead of Commando.", "implementedIn": "MarioDisplay"},
+    {"id": "melty-test", "gameType": "RoR2.PreGameController", "gameMember": "StartRun", "how": "call", "purpose": "Melty's test runs start a run as Mario and report checks.", "implementedIn": "MeltyTest"}
+  ]
+}

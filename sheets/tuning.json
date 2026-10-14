@@ -1,0 +1,83 @@
+{
+  "sheet": "tuning",
+  "about": "Numbers the systems run on.",
+  "columns": [
+    "id",
+    "value",
+    "unit",
+    "usedBy",
+    "note"
+  ],
+  "rows": [
+    {
+      "id": "unitsPerMetre",
+      "value": 100,
+      "unit": "sm64 units",
+      "usedBy": "MarioMath",
+      "note": "Mario is about 1.6 m tall, close to Commando."
+    },
+    {
+      "id": "tickRate",
+      "value": 30,
+      "unit": "Hz",
+      "usedBy": "MarioController",
+      "note": "SM64 runs at 30 frames a second; rendering interpolates between ticks."
+    },
+    {
+      "id": "chunkSize",
+      "value": 32,
+      "unit": "m",
+      "usedBy": "LevelCollision",
+      "note": "World collision is cut into square chunks, each one libsm64 surface object."
+    },
+    {
+      "id": "chunkRadius",
+      "value": 1,
+      "unit": "chunks",
+      "usedBy": "LevelCollision",
+      "note": "Chunks loaded on each side of Mario (3 x 3, 96 m). libsm64 tests every loaded triangle on each step, so less is faster; Mario is always 32 m+ from the unloaded edge."
+    },
+    {
+      "id": "knockbackFraction",
+      "value": 0.12,
+      "unit": "of max health",
+      "usedBy": "DamageReaction",
+      "note": "A single hit this big knocks Mario back SM64-style."
+    },
+    {
+      "id": "fallRescue",
+      "value": 120,
+      "unit": "m",
+      "usedBy": "MarioController",
+      "note": "Falling this far below the last ground puts Mario back on it."
+    },
+    {
+      "id": "marioHealth",
+      "value": 2176,
+      "unit": "sm64 health (0x880)",
+      "usedBy": "MarioController",
+      "note": "SM64's own health is kept full; RoR2's health is the real one."
+    },
+    {
+      "id": "audioRate",
+      "value": 32000,
+      "unit": "Hz",
+      "usedBy": "MarioAudio",
+      "note": "libsm64 mixes stereo 16-bit at 32 kHz."
+    },
+    {
+      "id": "noWaterLevel",
+      "value": -1000000,
+      "unit": "sm64 units",
+      "usedBy": "MarioController",
+      "note": "SM64's water and poison gas lines, put far below every stage (libsm64 defaults sit at -100 m, above Golem Plains' floor)."
+    },
+    {
+      "id": "surfaceType",
+      "value": 21,
+      "unit": "SM64 surface type (0x15 SURFACE_NOT_SLIPPERY)",
+      "usedBy": "MarioMath",
+      "note": "RoR2's stages are hilly: on SM64's default surface Mario slides off anything past 38 degrees and wedges in crevices. Not-slippery ground still lets him slide, slide-kick and butt-slide on purpose."
+    }
+  ]
+}

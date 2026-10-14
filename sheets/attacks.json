@@ -1,0 +1,17 @@
+{
+  "sheet": "attacks",
+  "about": "Which SM64 actions hurt RoR2 monsters, and how hard. Damage = Mario's RoR2 damage stat x coefficient, so damage items scale it; procCoefficient 1 lets on-hit items trigger. A target is hit once per action (once per combo step when perStep is true). Offsets are metres in front of / above Mario's feet.",
+  "columns": ["id", "action", "actionName", "skill", "damageCoefficient", "procCoefficient", "radius", "forward", "up", "force", "perStep"],
+  "rows": [
+    {"id": "punch", "action": "0x00800380", "actionName": "ACT_PUNCHING", "skill": "punch", "damageCoefficient": 2.4, "procCoefficient": 1.0, "radius": 1.1, "forward": 0.9, "up": 0.8, "force": 600, "perStep": true},
+    {"id": "move_punch", "action": "0x00800457", "actionName": "ACT_MOVE_PUNCHING", "skill": "punch", "damageCoefficient": 2.4, "procCoefficient": 1.0, "radius": 1.1, "forward": 0.9, "up": 0.8, "force": 600, "perStep": true},
+    {"id": "jump_kick", "action": "0x018008AC", "actionName": "ACT_JUMP_KICK", "skill": "punch", "damageCoefficient": 3.0, "procCoefficient": 1.0, "radius": 1.2, "forward": 0.8, "up": 0.6, "force": 900, "perStep": false},
+    {"id": "dive", "action": "0x0188088A", "actionName": "ACT_DIVE", "skill": "punch", "damageCoefficient": 3.0, "procCoefficient": 1.0, "radius": 1.2, "forward": 0.9, "up": 0.4, "force": 1200, "perStep": false},
+    {"id": "dive_slide", "action": "0x00880456", "actionName": "ACT_DIVE_SLIDE", "skill": "punch", "damageCoefficient": 1.5, "procCoefficient": 0.7, "radius": 1.0, "forward": 0.7, "up": 0.3, "force": 600, "perStep": false},
+    {"id": "slide_kick", "action": "0x018008AA", "actionName": "ACT_SLIDE_KICK", "skill": "groundpound", "damageCoefficient": 3.5, "procCoefficient": 1.0, "radius": 1.2, "forward": 0.9, "up": 0.3, "force": 1200, "perStep": false},
+    {"id": "slide_kick_slide", "action": "0x0080045A", "actionName": "ACT_SLIDE_KICK_SLIDE", "skill": "groundpound", "damageCoefficient": 2.0, "procCoefficient": 0.7, "radius": 1.0, "forward": 0.7, "up": 0.3, "force": 600, "perStep": false},
+    {"id": "butt_slide", "action": "0x00840452", "actionName": "ACT_BUTT_SLIDE", "skill": "crouch", "damageCoefficient": 1.0, "procCoefficient": 0.5, "radius": 1.0, "forward": 0.5, "up": 0.3, "force": 400, "perStep": false},
+    {"id": "ground_pound_land", "action": "0x0080023C", "actionName": "ACT_GROUND_POUND_LAND", "skill": "groundpound", "damageCoefficient": 6.0, "procCoefficient": 1.0, "radius": 3.5, "forward": 0.0, "up": 0.5, "force": 2000, "perStep": false},
+    {"id": "stomp", "action": "0x00000000", "actionName": "STOMP (falling onto a head; not an SM64 action)", "skill": "stomp", "damageCoefficient": 4.0, "procCoefficient": 1.0, "radius": 0.9, "forward": 0.0, "up": 0.0, "force": 800, "perStep": false}
+  ]
+}

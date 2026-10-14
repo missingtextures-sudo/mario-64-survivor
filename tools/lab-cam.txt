@@ -1,0 +1,23 @@
+waitscene title 240
+sleep 3
+host
+waitscene lobby 90
+sleep 3
+pickmario
+sleep 2
+startrun
+sleep 15
+camstatus
+exitpod
+sleep 3
+camstatus
+exitpod
+waitmario 120
+nomonsters
+sleep 3
+camstatus
+move 0 3
+sleep 3.5
+camstatus
+shot cam
+log lab test done

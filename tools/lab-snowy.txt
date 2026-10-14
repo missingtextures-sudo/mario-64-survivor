@@ -1,0 +1,21 @@
+waitscene title 240
+sleep 3
+host
+waitscene lobby 90
+sleep 3
+pickmario
+sleep 2
+startrun
+sleep 15
+exitpod
+sleep 3
+exitpod
+waitmario 60
+nomonsters
+stage snowyforest
+sleep 10
+waitmario 40
+status
+check level-collision
+shot snowyforest
+log lab test done

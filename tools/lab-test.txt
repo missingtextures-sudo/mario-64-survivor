@@ -1,0 +1,59 @@
+waitscene title 240
+sleep 3
+host
+waitscene lobby 90
+sleep 3
+pickmario
+sleep 3
+shot lobby
+startrun
+sleep 15
+exitpod
+sleep 3
+exitpod
+waitmario 120
+nomonsters
+sleep 4
+status
+check rom-loaded
+check mario-survivor
+check mario-spawned
+check level-collision
+shot stand
+mark
+move 0 2.5
+sleep 3
+check mario-moves
+shot run
+waitidle 4
+mark
+status
+press A 0.3
+sleep 1.2
+waitidle 3
+press A 0.3
+sleep 1.2
+check mario-jumps
+nomonsters
+waitidle 8
+spawn LemurianMaster 2
+sleep 1.5
+status
+press B 0.15
+sleep 0.35
+press B 0.15
+sleep 0.35
+press B 0.15
+sleep 1.2
+waitidle 4
+press B 0.15
+sleep 0.35
+press B 0.15
+sleep 0.35
+press B 0.15
+sleep 1.2
+check mario-punches
+check mario-sounds
+shot punch
+status
+log lab test done

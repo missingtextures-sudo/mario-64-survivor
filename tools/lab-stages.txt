@@ -1,0 +1,62 @@
+waitscene title 240
+sleep 3
+host
+waitscene lobby 90
+sleep 3
+pickmario
+sleep 2
+startrun
+sleep 15
+exitpod
+sleep 3
+exitpod
+waitmario 60
+nomonsters
+status
+stage snowyforest
+sleep 10
+waitmario 60
+status
+check level-collision
+shot snowyforest
+stage blackbeach
+sleep 10
+waitmario 60
+status
+check level-collision
+stage blackbeach2
+sleep 10
+waitmario 60
+status
+check level-collision
+stage golemplains2
+sleep 10
+waitmario 60
+status
+check level-collision
+stage lakesnight
+sleep 10
+waitmario 60
+status
+check level-collision
+stage villagenight
+sleep 10
+waitmario 60
+status
+check level-collision
+stage foggyswamp
+sleep 10
+waitmario 60
+status
+check level-collision
+stage frozenwall
+sleep 10
+waitmario 60
+status
+check level-collision
+stage goolake
+sleep 10
+waitmario 60
+status
+check level-collision
+log lab test done

@@ -1,0 +1,60 @@
+{
+  "sheet": "skills",
+  "about": "What the character select and HUD show in each skill slot. Mario's moves come from SM64 itself; these rows only describe them. iconTile is the tile of Mario's own texture (from the ROM) drawn on the icon. Tiles: 0 metal, 1 button, 2 M logo, 3 sideburn, 4 mustache, 5-8 eyes, 9-10 wings.",
+  "columns": [
+    "id",
+    "slot",
+    "name",
+    "description",
+    "button",
+    "iconColor",
+    "iconTile"
+  ],
+  "rows": [
+    {
+      "id": "passive",
+      "slot": "passive",
+      "name": "Super Mario 64",
+      "description": "Mario moves exactly as in Super Mario 64: triple jumps, long jumps, backflips, wall kicks, side flips and ground pounds.",
+      "button": "A",
+      "iconColor": "#E52521",
+      "iconTile": 5
+    },
+    {
+      "id": "punch",
+      "slot": "primary",
+      "name": "Punch, Punch, Kick",
+      "description": "Press B for a three-hit combo. Run and press B to dive, or press B in the air for a jump kick. Each hit deals <style=cIsDamage>240%-300% damage</style>.",
+      "button": "B",
+      "iconColor": "#E52521",
+      "iconTile": 2
+    },
+    {
+      "id": "groundpound",
+      "slot": "secondary",
+      "name": "Ground Pound",
+      "description": "Press Z in the air to ground pound, dealing <style=cIsDamage>600% damage</style> around where you land. Z while running slides into a <style=cIsDamage>350%</style> slide kick.",
+      "button": "Z",
+      "iconColor": "#2B4FCF",
+      "iconTile": 1
+    },
+    {
+      "id": "crouch",
+      "slot": "utility",
+      "name": "Crouch",
+      "description": "Also Z. Crouch then jump for a long jump (running) or a backflip (standing).",
+      "button": "Z",
+      "iconColor": "#2B4FCF",
+      "iconTile": 4
+    },
+    {
+      "id": "stomp",
+      "slot": "special",
+      "name": "Stomp",
+      "description": "Land on an enemy's head to deal <style=cIsDamage>400% damage</style> and bounce off it.",
+      "button": "A",
+      "iconColor": "#8C5A2B",
+      "iconTile": 3
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "sheet": "survivor",
+  "about": "The one new survivor. A clone of a vanilla body keeps hurtboxes, item displays and networking; Mario replaces its look and movement.",
+  "columns": ["id", "cloneBody", "cloneDisplay", "name", "subtitle", "description", "outro", "failureOutro", "color", "sortPosition", "baseMaxHealth", "levelMaxHealth", "baseRegen", "levelRegen", "baseDamage", "levelDamage", "baseArmor", "baseCrit"],
+  "rows": [
+    {
+      "id": "MarioBody",
+      "cloneBody": "Prefabs/CharacterBodies/CommandoBody",
+      "cloneDisplay": "Prefabs/CharacterDisplays/CommandoDisplay",
+      "name": "Mario",
+      "subtitle": "Super Star Plumber",
+      "description": "Mario plays with his real Super Mario 64 moveset, read from your own ROM.<color=#CCD3E0>\n\n< ! > Jump (A) three times in a row for a triple jump; crouch (Z) and jump for a long jump or backflip.\n\n< ! > Punch (B) three times for a punch-punch-kick combo. Run and press B to dive.\n\n< ! > Ground pound (Z in the air) hits everything around where you land.\n\n< ! > Land on an enemy's head to stomp it and bounce.\n\n< ! > Damage items make every hit stronger, and on-hit items trigger from punches, kicks and stomps.</color>",
+      "outro": "..and so he left, with a Power Star and a story nobody in the Mushroom Kingdom will believe.",
+      "failureOutro": "..and so he vanished. Game over.",
+      "color": "#E52521",
+      "sortPosition": 100,
+      "baseMaxHealth": 110,
+      "levelMaxHealth": 33,
+      "baseRegen": 1.0,
+      "levelRegen": 0.2,
+      "baseDamage": 12,
+      "levelDamage": 2.4,
+      "baseArmor": 0,
+      "baseCrit": 1
+    }
+  ]
+}

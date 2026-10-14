@@ -1,0 +1,45 @@
+waitscene title 240
+sleep 3
+host
+waitscene lobby 90
+sleep 3
+pickmario
+sleep 2
+startrun
+sleep 15
+exitpod
+sleep 3
+exitpod
+waitmario 60
+stage blackbeach
+sleep 10
+waitmario 60
+nomonsters
+sleep 3
+waitidle 4
+mark
+move 0 2.5
+sleep 3
+nomonsters
+waitidle 8
+spawn LemurianMaster 2
+waitnear 2.2 10
+facetarget
+press B 0.15
+sleep 0.35
+press B 0.15
+sleep 0.35
+press B 0.15
+sleep 1.2
+waitidle 4
+waitnear 2.2 8
+facetarget
+press B 0.15
+sleep 0.35
+press B 0.15
+sleep 0.35
+press B 0.15
+sleep 1.2
+check mario-punches
+status
+log lab test done
