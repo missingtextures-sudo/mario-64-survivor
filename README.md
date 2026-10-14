@@ -1,4 +1,4 @@
-﻿# Mario 64 Survivor
+# Mario 64 Survivor
 
 **One-click install on Melty: https://melty.gg/m/mario-64-survivor**
 
@@ -47,7 +47,7 @@ Melty does all of this for you. To install by hand:
 1. Install [BepInEx 5](https://github.com/BepInEx/BepInEx/releases) (5.4.23 or later, x64) into Risk of Rain 2.
 2. Download `MarioRoR2-<version>.zip` from [Releases](../../releases) and unzip it into the game folder. It puts `MarioRoR2.dll` in `BepInEx/plugins/MarioRoR2`.
 3. Build [libsm64](https://github.com/libsm64/libsm64) yourself (commit `fd11813`, run `make` under MSYS2 MinGW64). Copy `dist/sm64.dll` and the MinGW runtime DLLs it needs (such as `libwinpthread-1.dll`) to `BepInEx/MarioRoR2-native`. The release doesn't include `sm64.dll` because it is built from the SM64 decompilation.
-4. Start the game once, then set `RomPath` in `BepInEx/config/gg.melty.marioror2.cfg` to your Super Mario 64 (US) `.z64` ROM.
+4. Put your Super Mario 64 (US) ROM (`.z64`, `.v64` or `.n64`) in Downloads, Desktop or Documents. The mod finds it at start. If it's somewhere else, set `RomPath` in `BepInEx/config/gg.melty.marioror2.cfg`.
 ## How it works
 
 - A BepInEx plugin adds a survivor cloned from Commando's body, so Mario keeps Commando's hurtboxes, item displays and networking. Commando's model is hidden and his physics switched off.

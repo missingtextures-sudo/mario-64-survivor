@@ -11,7 +11,7 @@ namespace MarioRoR2
     public sealed class Plugin : BaseUnityPlugin
     {
         public const string Guid = "gg.melty.marioror2";
-        public const string Version = "0.1.0";
+        public const string Version = "0.1.1";
 
         internal static ManualLogSource Log = null!;
         internal static ConfigEntry<string> RomPath = null!;
@@ -20,11 +20,12 @@ namespace MarioRoR2
         private void Awake()
         {
             Log = Logger;
-            RomPath = Config.Bind("Super Mario 64", "RomPath", "", "Your Super Mario 64 (US) ROM. Melty fills this in for you through melty.properties; set it here only when playing without Melty.");
+            RomPath = Config.Bind("Super Mario 64", "RomPath", "", "Your Super Mario 64 (US) ROM. Found for you (Downloads, Desktop, Documents, or the copy Melty remembers) and saved here; set it yourself if yours is somewhere else.");
             Volume = Config.Bind("Super Mario 64", "Volume", 0.8f, "Mario's voice and sound effects, 0 to 1.");
             MarioAudio.Volume = Volume.Value;
 
             Log.LogInfo(MarioMath.SelfCheck(out string why) ? "self-check: SM64/Unity conversions pass" : "self-check FAILED: " + why);
+            Log.LogInfo(Sm64.SelfCheck(out why) ? "self-check: ROM byte order fix passes" : "self-check FAILED: " + why);
             CheckHooks();
             Sm64.Init(Path.GetDirectoryName(Info.Location)!);
             if (!Sm64.Ready)

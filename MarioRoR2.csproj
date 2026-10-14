@@ -9,7 +9,7 @@
     <LangVersion>10.0</LangVersion>
     <Nullable>enable</Nullable>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-    <Version>0.1.0</Version>
+    <Version>0.1.1</Version>
     <GenerateDocumentationFile>false</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);CS1591;CS0649;CS0436;CS8618;MSB3277;MSB3270</NoWarn>
     <CopyLocalLockFileAssemblies>false</CopyLocalLockFileAssemblies>

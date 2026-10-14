@@ -112,7 +112,7 @@ namespace MarioRoR2
             }
             tokens[P + "NAME"] = sv.Name;
             tokens[P + "SUBTITLE"] = sv.Subtitle;
-            tokens[P + "DESCRIPTION"] = sv.Description;
+            tokens[P + "DESCRIPTION"] = (Sm64.Ready ? "" : $"<color=#FF6060>Mario can't play yet: {Sm64.Problem}</color>\n\n") + sv.Description;
             tokens[P + "OUTRO"] = sv.Outro;
             tokens[P + "FAILURE"] = sv.FailureOutro;
 
